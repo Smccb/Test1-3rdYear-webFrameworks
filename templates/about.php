@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <title>
+        bookshop about page
+    </title>
+</head>
+<body>
+<h1>
+    About the university bookshop
+</h1>
+<p>
+    we like books
+</p>
+
+<p>
+    we are a small bookshop
+</p>
+
+<p>
+    selling books recommended for our modules
+</p>
+<a href="/?action=about">About page</a>
+<br>
+<a href="/?action=list">List all books</a>
+<footer>
+
+    <a href="/?action=list">Links</a>
+</footer>
+</body>
+</html>
+
+<?php ?>

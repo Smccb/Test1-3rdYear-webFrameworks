@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="unit" tests="19" assertions="17" errors="0" failures="5" skipped="0" time="0.012048">
+    <testcase name="test_TYPE_1_01_ConGetSet_NotNullAfterConstruction" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="12" assertions="1" time="0.007327"/>
+    <testcase name="test_TYPE_1_02_ConGetSet_DefaultExchangeRate_AfterConstruction" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="24" assertions="1" time="0.000553"/>
+    <testcase name="test_TYPE_1_03_ConGetSet_CurrencyDefault_AfterConstruction" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="39" assertions="1" time="0.000423"/>
+    <testcase name="test_TYPE_1_04_ConGetSet_Currency" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="53" assertions="1" time="0.000128"/>
+    <testcase name="test_TYPE_1_05_ConGetSet_Currency2" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="68" assertions="1" time="0.000117"/>
+    <testcase name="test_TYPE_1_06_ConGetSet_Currency3" class="TudublinTest\Type1_Construct_Get_Set_Test" classname="TudublinTest.Type1_Construct_Get_Set_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type1_Construct_Get_Set_Test.php" line="84" assertions="1" time="0.000112"/>
+    <testcase name="test_TYPE_2_01_Validation_Valid_Currency" class="TudublinTest\Type2_Validation_Test" classname="TudublinTest.Type2_Validation_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php" line="14" assertions="1" time="0.000376"/>
+    <testcase name="test_TYPE_2_02_Validation_Valid_Currency2" class="TudublinTest\Type2_Validation_Test" classname="TudublinTest.Type2_Validation_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php" line="29" assertions="1" time="0.000124"/>
+    <testcase name="test_TYPE_2_03_Validation_INValid_Currency" class="TudublinTest\Type2_Validation_Test" classname="TudublinTest.Type2_Validation_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php" line="44" assertions="1" time="0.001071">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">TudublinTest\Type2_Validation_Test::test_TYPE_2_03_Validation_INValid_Currency
+Failed asserting that true is false.
+
+C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php:55
+C:\Users\yogad\Desktop\lab_test1_exchanger\vendor\bin\codecept:120
+</failure>
+    </testcase>
+    <testcase name="test_TYPE_2_04_Validation_INValid_Currency2" class="TudublinTest\Type2_Validation_Test" classname="TudublinTest.Type2_Validation_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php" line="59" assertions="1" time="0.000255">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">TudublinTest\Type2_Validation_Test::test_TYPE_2_04_Validation_INValid_Currency2
+Failed asserting that true is false.
+
+C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type2_Validation_Test.php:70
+C:\Users\yogad\Desktop\lab_test1_exchanger\vendor\bin\codecept:120
+</failure>
+    </testcase>
+    <testcase name="test_TYPE_3_01_BasicOperations_Minimum_Commission_AmountOne" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="13" assertions="1" time="0.000173"/>
+    <testcase name="test_TYPE_3_02_BasicOperations_Minimum_Commission_AmountFifty" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="28" assertions="1" time="0.000121"/>
+    <testcase name="test_TYPE_3_03_BasicOperations_Minimum_Commission_Max_Threshold" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="42" assertions="1" time="0.000124"/>
+    <testcase name="test_TYPE_3_04_BasicOperations_Percentage_Commission_One_Hundred_Threshold" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="56" assertions="1" time="0.000113"/>
+    <testcase name="test_TYPE_3_05_BasicOperations_Percentage_Commission_Two_Hundred" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="71" assertions="1" time="0.000119"/>
+    <testcase name="test_TYPE_3_06_BasicOperations_Percentage_Commission_Three_Hundred" class="TudublinTest\Type3_Operations_Test" classname="TudublinTest.Type3_Operations_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type3_Operations_Test.php" line="85" assertions="1" time="0.000112"/>
+    <testcase name="test_TYPE_4_01_MainLogic_ExchangeSterling" class="TudublinTest\Type4_Main_Logic_Test" classname="TudublinTest.Type4_Main_Logic_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php" line="17" assertions="1" time="0.000499">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">TudublinTest\Type4_Main_Logic_Test::test_TYPE_4_01_MainLogic_ExchangeSterling
+Failed asserting that 0.0 matches expected 90.
+
+C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php:30
+C:\Users\yogad\Desktop\lab_test1_exchanger\vendor\bin\codecept:120
+</failure>
+    </testcase>
+    <testcase name="test_TYPE_4_02_MainLogic_Throws_Exception_Invalid_Currency" class="TudublinTest\Type4_Main_Logic_Test" classname="TudublinTest.Type4_Main_Logic_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php" line="34" assertions="0" time="0.000167">
+      <failure type="PHPUnit\Framework\AssertionFailedError">TudublinTest\Type4_Main_Logic_Test::test_TYPE_4_02_MainLogic_Throws_Exception_Invalid_Currency
+Exception 'Exception' was not thrown as expected
+
+C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php:36
+C:\Users\yogad\Desktop\lab_test1_exchanger\vendor\bin\codecept:120
+</failure>
+    </testcase>
+    <testcase name="test_TYPE_4_03_MainLogic_Throws_Exception_Amount_Too_Little" class="TudublinTest\Type4_Main_Logic_Test" classname="TudublinTest.Type4_Main_Logic_Test" file="C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php" line="51" assertions="0" time="0.000135">
+      <failure type="PHPUnit\Framework\AssertionFailedError">TudublinTest\Type4_Main_Logic_Test::test_TYPE_4_03_MainLogic_Throws_Exception_Amount_Too_Little
+Exception 'Exception' was not thrown as expected
+
+C:\Users\yogad\Desktop\lab_test1_exchanger\tests\unit\Type4_Main_Logic_Test.php:53
+C:\Users\yogad\Desktop\lab_test1_exchanger\vendor\bin\codecept:120
+</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

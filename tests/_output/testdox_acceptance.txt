@@ -1,0 +1,51 @@
+
+Test Class = Type1_Page_Exists_Basic_HTML_Cest
+ [x] test TYPE 1 01 page response okay | "/"
+ [x] test TYPE 1 01 page response okay | "/?action=about"
+ [x] test TYPE 1 01 page response okay | "/?action=list"
+ [x] test TYPE 1 02 content page | "/","ERROR - no default page content!","body p"
+ [x] test TYPE 1 03 content page2 | "/?action=about","we like books","body p"
+ [x] test TYPE 1 03 content page2 | "/?action=list","list of all books","body h1"
+ [x] test TYPE 1 03 content page2 | "/?action=list","(in our database)","body h2"
+
+Test Class = Type2_Page_Contents_Cest
+ [x] test TYPE 2 01 content page1 | "/?action=about","bookshop about page","head title"
+ [x] test TYPE 2 01 content page1 | "/?action=about","we are a small bookshop,","body p"
+ [x] test TYPE 2 01 content page1 | "/?action=about","selling books recommended for our modules","body p"
+ [x] test TYPE 2 01 content page1 | "/?action=about","About the university bookshop","body h1"
+ [x] test TYPE 2 01 content page1 | "/?action=about","Links","body footer"
+ [x] test TYPE 2 02 content page2 | "/?action=list","bookshop all books list page","head title"
+ [x] test TYPE 2 02 content page2 | "/?action=list","Links","body footer"
+ [x] test TYPE 2 01 not expected content | "/","home","head title"
+ [x] test TYPE 2 01 not expected content | "/","page","head title"
+ [x] test TYPE 2 01 not expected content | "/","home","head h1"
+ [x] test TYPE 2 01 not expected content | "/","page","head title"
+ [x] test TYPE 2 01 not expected content | "/","home","body"
+ [x] test TYPE 2 01 not expected content | "/","home page","body"
+
+Test Class = Type3_Link_And_Data_Test_Cest
+ [x] test TYPE 3 01 links page1 | "/?action=about","/?action=about","About page"
+ [x] test TYPE 3 01 links page1 | "/?action=about","/?action=list","List all books"
+ [x] test TYPE 3 02 links page2 | "/?action=list","/?action=about","About page"
+ [x] test TYPE 3 02 links page2 | "/?action=list","/?action=list","List all books"
+ [x] test TYPE 3 03 should not see link | "/","About page"
+ [x] test TYPE 3 03 should not see link | "/","List all books"
+
+Test Class = Type4_Data_Checks_Cest
+ [x] test TYPE 4 01 see item count | "/?action=list","4","div"
+ [x] test TYPE 4 01 see item count | "/?action=list","6","a"
+ [x] test TYPE 4 02 see details for record2 | "/?action=show&id=1","id: 1","h2"
+ [x] test TYPE 4 02 see details for record2 | "/?action=show&id=1","title = Music Education: An Artificial Intelligence Approach","body div"
+ [x] test TYPE 4 02 see details for record2 | "/?action=show&id=1","Music Education: An Artificial Intelligence Approach","body div strong"
+ [x] test TYPE 4 02 see details for record2 | "/?action=show&id=1","num pages = 200","body div"
+ [x] test TYPE 4 02 see details for record2 | "/?action=show&id=1","200","body div strong"
+ [x] test TYPE 4 03 see details for record2 | "/?action=show&id=4","id: 4","h2"
+ [x] test TYPE 4 03 see details for record2 | "/?action=show&id=4","title = An Introduction to Symfony 6","body div"
+ [x] test TYPE 4 03 see details for record2 | "/?action=show&id=4","An Introduction to Symfony 6","body div strong"
+ [x] test TYPE 4 03 see details for record2 | "/?action=show&id=4","num pages = 500","body div"
+ [x] test TYPE 4 03 see details for record2 | "/?action=show&id=4","500","body div strong"
+ [x] test TYPE 4 04 see image element | "/?action=show&id=1","/images/music.png"
+ [x] test TYPE 4 04 see image element | "/?action=show&id=2","/images/cookbook.png"
+ [x] test TYPE 4 04 see image element | "/?action=show&id=3","/images/php.png"
+ [x] test TYPE 4 04 see image element | "/?action=show&id=4","/images/symfony.png"
+

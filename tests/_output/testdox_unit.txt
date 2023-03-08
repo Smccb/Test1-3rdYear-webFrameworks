@@ -1,0 +1,28 @@
+
+Test Class = TudublinTest\Type1_Construct_Get_Set_Test
+ [x] test TYPE 1 01 ConGetSet NotNullAfterConstruction
+ [x] test TYPE 1 02 ConGetSet DefaultExchangeRate AfterConstruction
+ [x] test TYPE 1 03 ConGetSet CurrencyDefault AfterConstruction
+ [x] test TYPE 1 04 ConGetSet Currency
+ [x] test TYPE 1 05 ConGetSet Currency2
+ [x] test TYPE 1 06 ConGetSet Currency3
+
+Test Class = TudublinTest\Type2_Validation_Test
+ [x] test TYPE 2 01 Validation Valid Currency
+ [x] test TYPE 2 02 Validation Valid Currency2
+ [x] test TYPE 2 03 Validation INValid Currency
+ [x] test TYPE 2 04 Validation INValid Currency2
+
+Test Class = TudublinTest\Type3_Operations_Test
+ [x] test TYPE 3 01 BasicOperations Minimum Commission AmountOne
+ [x] test TYPE 3 02 BasicOperations Minimum Commission AmountFifty
+ [x] test TYPE 3 03 BasicOperations Minimum Commission Max Threshold
+ [x] test TYPE 3 04 BasicOperations Percentage Commission One Hundred Threshold
+ [x] test TYPE 3 05 BasicOperations Percentage Commission Two Hundred
+ [x] test TYPE 3 06 BasicOperations Percentage Commission Three Hundred
+
+Test Class = TudublinTest\Type4_Main_Logic_Test
+ [x] test TYPE 4 01 MainLogic ExchangeSterling
+ [x] test TYPE 4 02 MainLogic Throws Exception Invalid Currency
+ [x] test TYPE 4 03 MainLogic Throws Exception Amount Too Little
+
